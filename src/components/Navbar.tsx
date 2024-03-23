@@ -26,7 +26,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`${alegreya.className} h-16 mt-4`}>
+    <div className={`${alegreya.className} h-16`}>
       <nav className="flex justify-between items-center bg-red-500">
         <Link
           href="/"
