@@ -1,9 +1,10 @@
+"use client"
+
 import Link from "next/link";
 import { Alegreya } from "next/font/google";
 import { IoMenu, IoClose } from "react-icons/io5";
 import { useState } from "react";
-import foto1 from "@/assets/img/foto1.png";
-import Image from "next/image";
+
 
 const alegreya = Alegreya({ subsets: ["latin"] });
 
@@ -26,8 +27,9 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`${alegreya.className} h-16`}>
-      <nav className="flex justify-between items-center bg-red-500">
+    <div className={`${alegreya.className} fixed w-full z-10`}>
+      <nav className="flex justify-between items-center bg-colorNav">
+        <div className="flex items-center justify-between w-3/5 mx-auto">
         <Link
           href="/"
           className="hidden md:flex gap-2 items-center p-5 text-colorWhite hover:text-colorSecundary cursor-pointer"
@@ -48,8 +50,10 @@ const Navbar = () => {
             </Link>
           ))}
         </div>
+          
+        </div>
       </nav>
-      <div className="md:hidden flex justify-between p-4 items-center bg-red-500">
+      <div className="md:hidden flex justify-between p-4 items-center bg-colorNav">
         {!active ? (
           <div className="flex justify-between w-full items-center h-16 ">
             <div>
