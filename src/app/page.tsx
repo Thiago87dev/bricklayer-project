@@ -1,3 +1,4 @@
+import { feedbacks } from "@/feedbacks";
 import Image from "next/image";
 import Link from "next/link";
 import pedreiro from "@/assets/img/pedreiro.png";
@@ -5,6 +6,7 @@ import vinte from "@/assets/img/vinte.png";
 import whats from "@/assets/img/whats.png";
 import mais from "@/assets/img/mais.png";
 import reforma from "@/assets/img/reforma.jpg";
+import Feedback from "@/components/Feedback";
 
 export default function Home() {
   return (
@@ -90,11 +92,21 @@ export default function Home() {
       <section className="py-12 bg-colorSecundary">
         <div className="xl:w-3/5 mx-auto flex flex-col md:flex-row justify-between items-center gap-8 p-8">
           <div className="md:w-2/5">
-            <Image className="w-80" alt="reforma" src={reforma} width={200} height={200} />
+            <Image
+              className="w-80"
+              alt="reforma"
+              src={reforma}
+              width={200}
+              height={200}
+            />
           </div>
-          <div className="md:w-3/5 flex flex-col md:h-60 gap-4 ">
-            <p className="text-xs font-bold">SUA SATISFAÇÃO EM PRIMEIRO LUGAR</p>
-            <h2 className="text-2xl font-bold">Você visualiza, idealiza, sonha, e nós tornamos realidade.</h2>
+          <div className="md:w-3/5 flex flex-col md:h-60 gap-2 ">
+            <p className="text-xs font-bold">
+              SUA SATISFAÇÃO EM PRIMEIRO LUGAR
+            </p>
+            <h2 className="text-2xl font-bold">
+              Você visualiza, idealiza, sonha, e nós tornamos realidade.
+            </h2>
             <p>
               Nós transformamos residências com reformas meticulosamente
               planejadas, realizadas por uma equipe de profissionais
@@ -103,6 +115,13 @@ export default function Home() {
               assegurando conforto e tranquilidade para você e sua família.
             </p>
           </div>
+        </div>
+      </section>
+      <section>
+        <div className="py-8 flex flex-col flex-wrap items-center gap-6  md:flex-row md:justify-around ">
+          {feedbacks.map(({id, nome, texto }) => (
+            <Feedback key={id} nome={nome} texto={texto}/>
+          ))}
         </div>
       </section>
     </main>
