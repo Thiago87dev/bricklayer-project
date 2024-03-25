@@ -31,7 +31,8 @@ const config: Config = {
         colorGold: "#f4d03d",
         colorNav: '#ec0511',
         colorPrimary: "#132239",
-        colorSecundary: "#1ed0d0",
+        colorSecundary: "#cecdbe",
+        colorDarkgray:"#374964"
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
