@@ -28,11 +28,13 @@ const config: Config = {
       colors: {
         colorWhite: "#ffffff",
         colorBlack: "#000000",
+        colorGray:'#808a99',
         colorGold: "#f4d03d",
+        colorDarkgray: "#374964",
+        colorGreen: "#2e994d",
         colorNav: "#ec0511",
         colorPrimary: "#132239",
         colorSecundary: "#cecdbe",
-        colorDarkgray: "#374964",
       },
       backgroundImage: {
         estrelas: "url('/img/estrelas.png')",
