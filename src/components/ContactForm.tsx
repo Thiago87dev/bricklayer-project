@@ -9,9 +9,9 @@ export default function ContactForm() {
   if (state.succeeded) {
     return (
       <div className="h-96 flex flex-col justify-around">
-        <div>
-            <h2 className="text-colorWhite text-4xl font-bold pt-8">Obrigado por entrar em contato.</h2>
-            <p className="text-colorWhite text-2xl font-bold ">Em breve, eu lhe darei um retorno.</p>
+        <div className="flex flex-col gap-4">
+            <h2 className="text-colorBlacke text-center text-4xl font-bold pt-8">Obrigado por entrar em contato.</h2>
+            <p className="text-colorBlacke text-center text-2xl font-bold ">Em breve, lhe daremos um retorno.</p>
         </div>
         <div className=" flex items-center gap-2 text-colorPrimary justify-center" onClick={() => window.location.reload()}>
             <p className="text-7xl cursor-pointer"><IoReturnDownBack /></p>

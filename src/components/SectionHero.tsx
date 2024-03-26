@@ -50,7 +50,7 @@ const SectionHero = () => {
             </h2>
           </div>
           <div className="flex flex-col md:flex-row items-center justify-between">
-            <div className="flex flex-col items-center relative rounded-xl p-6  bg-colorDarkgray">
+            <div className="flex flex-col items-center relative rounded-xl px-1 py-6 bg-colorDarkgray">
               <p className="text-colorWhite text-2xl font-bold text-center">
                 Precisando reformar
               </p>
