@@ -8,7 +8,7 @@ export default function ContactForm() {
   const [state, handleSubmit] = useForm("mzbngoyz");
   if (state.succeeded) {
     return (
-      <div className="h-96 p-8 flex flex-col justify-around">
+      <div className="h-96 flex flex-col justify-around">
         <div>
             <h2 className="text-colorWhite text-4xl font-bold pt-8">Obrigado por entrar em contato.</h2>
             <p className="text-colorWhite text-2xl font-bold ">Em breve, eu lhe darei um retorno.</p>
@@ -21,7 +21,7 @@ export default function ContactForm() {
     );
   }
   return (
-    <form className="flex flex-col gap-6 md:w-1/2 p-8 " onSubmit={handleSubmit}>
+    <form className="flex flex-col gap-6 md:w-1/2  " onSubmit={handleSubmit}>
       <div className="flex flex-col">
         <label className="font-semibold text-colorPrimary " htmlFor="name">Nome</label>
         <input className="h-12 rounded-sm px-4 border-solid border-2 border-colorBlack" placeholder="Digite seu nome" id="name" type="text" name="name" />
