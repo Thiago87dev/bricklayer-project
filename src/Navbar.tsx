@@ -27,7 +27,7 @@ const Navbar = () => {
   }
 
   return (
-    <div className={`${alegreya.className} fixed w-full z-10`}>
+    <div className={`${alegreya.className} fixed w-full z-20`}>
       <nav className="flex justify-between items-center bg-colorNav">
         <div className="flex items-center justify-between w-3/5 mx-auto">
         <Link
@@ -84,7 +84,7 @@ const Navbar = () => {
               
             </div>
 
-            <div className="bg-opacity-90 z-10 flex flex-col h-96 justify-around items-center rounded-lg">
+            <div className="bg-opacity-90 z-20 flex flex-col h-96 justify-around items-center rounded-lg">
               {navigation.map((item) => (
                 <Link
                   onClick={clomeMenu}
