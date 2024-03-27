@@ -1,5 +1,5 @@
 import { feedbacks } from "@/feedbacks";
-import Feedback from "@/components/Feedback";
+import Feedback from "@/components/home/Feedback";
 
 const SectionFeedback = () => {
   return (

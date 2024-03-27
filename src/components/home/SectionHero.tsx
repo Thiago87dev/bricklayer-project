@@ -7,8 +7,8 @@ import mais from "@/assets/img/mais.png";
 
 const SectionHero = () => {
   return (
-    <section className="bg-colorPrimary py-12">
-        <div className="xl:w-3/5 mx-auto pt-28 px-8">
+    <section className="bg-colorGreenDark py-12">
+        <div className="xl:w-3/5 mx-auto pt-20 px-8">
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="flex flex-col items-center mb-8">
               <h1 className="text-colorWhite text-6xl xs:text-7xl sm:text-8xl font-bold">

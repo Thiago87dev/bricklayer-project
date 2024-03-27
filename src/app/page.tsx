@@ -1,14 +1,14 @@
 
-import Hero from "@/components/SectionHero";
-import FirsCall from "@/components/SectionFirsCall";
-import SecondCall from "@/components/SectionSecondCall";
-import SectionFeedback from "@/components/SectionFeedback";
-import SectionContact from "@/components/SectionContact";
+import SectionHero from "@/components/home/SectionHero";
+import FirsCall from "@/components/home/SectionFirsCall";
+import SecondCall from "@/components/home/SectionSecondCall";
+import SectionFeedback from "@/components/home/SectionFeedback";
+import SectionContact from "@/components/home/SectionContact";
 
 export default function Home() {
   return (
     <main>
-      <Hero />
+      <SectionHero />
       <FirsCall />
       <SectionFeedback />
       <SecondCall />

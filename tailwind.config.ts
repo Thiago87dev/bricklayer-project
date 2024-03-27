@@ -28,10 +28,12 @@ const config: Config = {
       colors: {
         colorWhite: "#ffffff",
         colorBlack: "#000000",
-        colorGray:'#808a99',
+        colorGray: "#808a99",
         colorGold: "#f4d03d",
+        colorBege: "#ebeadf",
         colorDarkgray: "#374964",
         colorGreen: "#2e994d",
+        colorGreenDark: "#243328",
         colorNav: "#ec0511",
         colorPrimary: "#132239",
         colorSecundary: "#cecdbe",
