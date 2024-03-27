@@ -1,5 +1,5 @@
 "use client";
-import ContactForm from "./ContactForm";
+import ContactForm from "../ContactForm";
 
 interface SectionContactProps {
   title: string
