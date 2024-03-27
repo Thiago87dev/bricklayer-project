@@ -16,8 +16,8 @@ const Map = () => {
     lng: -48.770824,
   };
   return (
-    <div className="w-3/5 h-96 relative mx-auto">
-      <div className="ml-3 absolute left-0 top-14 z-10 p-4 bg-colorWhite">
+    <div className="md:w-3/5 md:h-96 w-full h-96 relative mx-auto">
+      <div className="ml-1 mt-2 absolute left-0 top-0 z-10 p-4 bg-colorWhite">
         <div className="flex items-center gap-2">
           <div>
             <p className="text-xs font-bold">
@@ -53,7 +53,7 @@ const Map = () => {
         <GoogleMap
           mapContainerStyle={{ width: "100%", height: "100%" }}
           center={position}
-          zoom={15}
+          zoom={14}
         >
           <Marker position={position} />
         </GoogleMap>
