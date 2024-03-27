@@ -25,7 +25,10 @@ const Map = () => {
             </p>
             <p className="text-xs font-semibold">Joinville - SC, 89234-042</p>
           </div>
-          <Link target="_blank" href="https://www.google.com/maps/dir//-26.348635,-48.7706171/@-26.348635,-48.773192,17z?hl=pt-BR&entry=ttu">
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/dir//R.+Natanael+Amorim+Vieira,+451+-+Paranaguamirim,+Joinville+-+SC,+89234-042/@-26.3487785,-48.7743253,16z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94deb5438760d413:0xc1846df7435f012a!2m2!1d-48.7708135!2d-26.3486835?entry=ttu"
+          >
             <div className="flex flex-col items-center">
               <TbRouteAltRight
                 title="Ver rotas para esse local no google maps"
@@ -42,7 +45,10 @@ const Map = () => {
           </Link>
         </div>
         <div>
-          <Link target="_blank" href="https://www.google.com/maps/place/26%C2%B020'55.1%22S+48%C2%B046'14.2%22W/@-26.348635,-48.773192,17z/data=!3m1!4b1!4m4!3m3!8m2!3d-26.348635!4d-48.7706171?hl=pt-BR&entry=ttu">
+          <Link
+            target="_blank"
+            href="https://www.google.com/maps/place/R.+Natanael+Amorim+Vieira,+451+-+Paranaguamirim,+Joinville+-+SC,+89234-042/@-26.3487785,-48.7743253,16.75z/data=!4m6!3m5!1s0x94deb5438760d413:0xc1846df7435f012a!8m2!3d-26.3486835!4d-48.7708135!16s%2Fg%2F11lgd05l_s?entry=ttu"
+          >
             <p className="text-xs inline-block text-blue-500 border-b-2 border-transparent hover:border-solid hover:border-b-2 hover:border-blue-500">
               Ver mapa ampliado
             </p>
