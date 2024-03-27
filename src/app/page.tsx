@@ -12,7 +12,7 @@ export default function Home() {
       <FirsCall />
       <SectionFeedback />
       <SecondCall />
-      <SectionContact/>
+      <SectionContact title="Faça seu orçamento conosco"/>
     </main>
   );
 }
