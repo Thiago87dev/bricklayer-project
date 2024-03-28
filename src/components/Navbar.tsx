@@ -12,7 +12,7 @@ const navigation = [
   { title: "Inicio", href: "/" },
   { title: "Projetos", href: "/" },
   { title: "Sobre", href: "/about" },
-  { title: "Contato", href: "/" },
+  { title: "Contato", href: "/contact" },
 ];
 
 const Navbar = () => {

@@ -2,17 +2,22 @@ import { useForm, ValidationError } from "@formspree/react";
 
 import { IoReturnDownBack } from "react-icons/io5";
 
+interface ContactFormProps {
+  textLabel: string
+  successTextColor: string
+}
 
-export default function ContactForm() {
+
+export default function ContactForm({textLabel, successTextColor}: ContactFormProps) {
   const [state, handleSubmit] = useForm("mqkryqpa");
   if (state.succeeded) {
     return (
       <div className="h-96 flex flex-col justify-around">
-        <div className="flex flex-col gap-4">
-            <h2 className="text-colorBlacke text-center text-4xl font-bold pt-8">Obrigado por entrar em contato.</h2>
-            <p className="text-colorBlacke text-center text-2xl font-bold ">Em breve, lhe daremos um retorno.</p>
+        <div className={`flex flex-col gap-4 ${successTextColor}`}>
+            <h2 className=" text-center text-4xl font-bold pt-8">Obrigado por entrar em contato.</h2>
+            <p className=" text-center text-2xl font-bold ">Em breve, lhe daremos um retorno.</p>
         </div>
-        <div className=" flex items-center gap-2 text-colorPrimary justify-center" onClick={() => window.location.reload()}>
+        <div className=" flex items-center gap-2  justify-center" onClick={() => window.location.reload()}>
             <p className="text-7xl cursor-pointer"><IoReturnDownBack /></p>
             <p className="text-base cursor-pointer">Voltar</p>
         </div>
@@ -20,22 +25,22 @@ export default function ContactForm() {
     );
   }
   return (
-    <form className="flex flex-col gap-6 md:w-1/2  " onSubmit={handleSubmit}>
-      <div className="flex flex-col">
-        <label className="font-semibold text-colorPrimary " htmlFor="name">Nome</label>
-        <input className="h-12 rounded-sm px-4 border-solid border-2 border-colorBlack" placeholder="Digite seu nome" id="name" type="text" name="name" />
+    <form className={`flex flex-col gap-6 md:w-1/2`} onSubmit={handleSubmit}>
+      <div className={`flex flex-col `}>
+        <label className={`font-semibold ${textLabel}`} htmlFor="name">Nome</label>
+        <input className="h-12 rounded-sm px-4 border-solid border-2 " placeholder="Digite seu nome" id="name" type="text" name="name" />
         <ValidationError prefix="name" field="name" errors={state.errors} />
       </div>
 
-      <div className="flex flex-col">
-        <label className="font-semibold text-colorPrimary " htmlFor="email">E-mail</label>
-        <input className="h-12 rounded-sm px-4 border-solid border-2 border-colorBlack" placeholder="Digite e-mail" id="email" type="email" name="email" />
+      <div className="flex flex-col ">
+        <label className={`font-semibold ${textLabel}`} htmlFor="email">E-mail</label>
+        <input className="h-12 rounded-sm px-4 border-solid border-2 " placeholder="Digite e-mail" id="email" type="email" name="email" />
         <ValidationError prefix="Email" field="email" errors={state.errors} />
       </div>
 
       <div className="flex flex-col">
-        <label className="font-semibold text-colorPrimary " htmlFor="subject">Assunto</label>
-        <input className="h-12 rounded-sm px-4 border-solid border-2 border-colorBlack" placeholder="Digite o assunto" id="subject" type="subject" name="subject" />
+        <label className={`font-semibold ${textLabel}`} htmlFor="subject">Assunto</label>
+        <input className="h-12 rounded-sm px-4 border-solid border-2 " placeholder="Digite o assunto" id="subject" type="subject" name="subject" />
         <ValidationError
           prefix="subject"
           field="subject"
@@ -44,8 +49,8 @@ export default function ContactForm() {
       </div>
 
       <div className="flex flex-col">
-        <label className="font-semibold text-colorPrimary " htmlFor="message">Mensagem</label>
-        <textarea className="h-24 px-4 border-solid border-2 border-colorBlack" placeholder="Digite sua proposta, ou apenas me diga olá :)" id="message" name="message" />
+        <label className={`font-semibold ${textLabel}`} htmlFor="message">Mensagem</label>
+        <textarea className="h-24 px-4 border-solid border-2 " placeholder="Digite sua proposta, ou apenas me diga olá :)" id="message" name="message" />
         <ValidationError
           prefix="Message"
           field="message"
