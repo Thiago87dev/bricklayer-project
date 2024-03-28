@@ -37,7 +37,7 @@ const SectionContact = () => {
         <div className="md:w-3/5 flex justify-end xl:justify-center  ">
           <ContactForm
             textLabel="text-colorWhite"
-            successTextColor="text-colorBlack"
+            successTextColor="text-colorWhite"
           />
         </div>
       </div>
