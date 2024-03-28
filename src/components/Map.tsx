@@ -17,7 +17,7 @@ const Map = () => {
   };
   return (
     <div className="md:w-3/5 md:h-96 w-full h-96 relative mx-auto mb-8">
-      <div className="ml-1 w-9/12 mt-2 absolute left-0 top-0 z-10 p-4 bg-colorWhite">
+      <div className="ml-1 w-9/12 md:w-1/2 mt-2 absolute left-0 top-0 z-10 p-4 bg-colorWhite">
         <div className="flex items-center gap-2">
           <div>
             <p className="text-xs font-bold">

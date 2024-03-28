@@ -25,10 +25,10 @@ const SectionContact = () => {
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-bold ">Redes sociais</h2>
             <div className="flex gap-4 justify-center md:justify-start">
-              <Link href="https://www.instagram.com/d.d.m.n.construcoes?igsh=c2tnNHZxMXpudG4w">
+              <Link target="_blank" href="https://www.instagram.com/d.d.m.n.construcoes?igsh=c2tnNHZxMXpudG4w">
                 <SiInstagram size={40} />
               </Link>
-              <Link href="https://www.facebook.com/profile.php?id=100094175112687&mibextid=ZbWKwL">
+              <Link target="_blank" href="https://www.facebook.com/profile.php?id=100094175112687&mibextid=ZbWKwL">
                 <SiFacebook size={40} />
               </Link>
             </div>
