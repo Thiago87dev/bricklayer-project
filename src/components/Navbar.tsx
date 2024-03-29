@@ -28,17 +28,17 @@ const Navbar = () => {
 
   return (
     <div className={`${alegreya.className} fixed w-full z-20`}>
-      <nav className="flex justify-between items-center bg-colorNav">
+      <nav className="flex justify-between items-center bg-[#f9d63a]">
         <div className="flex items-center justify-between w-3/5 mx-auto">
         <Link
           href="/"
-          className="hidden md:flex gap-2 items-center p-5 text-colorWhite hover:text-colorSecundary cursor-pointer"
+          className="hidden md:flex gap-2 items-center p-5 text-colorBlack hover:scale-105 cursor-pointer"
         >
           <p className="text-4xl font-semibold relative group overflow-hidden">
             Logo
           </p>
         </Link>
-        <div className="hidden md:flex justify-end gap-8 p-5 text-colorWhite ">
+        <div className="hidden md:flex justify-end gap-8 p-5 text-colorBlack ">
           {navigation.map((item) => (
             <Link
               className="text-sm uppercase font-semibold relative group overflow-hidden"
@@ -53,13 +53,13 @@ const Navbar = () => {
           
         </div>
       </nav>
-      <div className="md:hidden flex justify-between p-4 items-center bg-colorNav">
+      <div className="md:hidden flex justify-between p-4 items-center bg-[#f9d63a]">
         {!active ? (
           <div className="flex justify-between w-full items-center h-16 ">
             <div>
               <Link
                 href="/"
-                className=" flex gap-2 items-center p-5 text-colorWhite hover:text-colorSecundary cursor-pointer"
+                className=" flex gap-2 items-center p-5 text-colorBlack hover:text-colorSecundary cursor-pointer"
               >
                 <p className="text-4xl font-semibold relative group overflow-hidden">
                   Logo
@@ -67,18 +67,18 @@ const Navbar = () => {
               </Link>
             </div>
             <IoMenu
-              className="text-4xl cursor-pointer text-colorWhite"
+              className="text-4xl cursor-pointer text-colorBlack"
               onClick={toggleMenu}
             />
           </div>
         ) : (
           <div className="flex flex-col w-full justify-center ">
             <div className="flex justify-between items-center h-16">
-            <p className="text-4xl ml-5 text-colorWhite font-semibold relative group overflow-hidden">
+            <p className="text-4xl ml-5 text-colorBlack font-semibold relative group overflow-hidden">
                 Logo
               </p>
               <IoClose
-                className="text-4xl cursor-pointer text-colorWhite"
+                className="text-4xl cursor-pointer text-colorBlack"
                 onClick={toggleMenu}
               />
               
@@ -88,7 +88,7 @@ const Navbar = () => {
               {navigation.map((item) => (
                 <Link
                   onClick={clomeMenu}
-                  className="text-lg uppercase text-colorWhite font-semibold flex flex-col "
+                  className="text-lg uppercase text-colorBlack font-semibold flex flex-col "
                   key={item.title}
                   href={item.href}
                 >

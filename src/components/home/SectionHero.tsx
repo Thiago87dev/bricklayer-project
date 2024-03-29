@@ -74,7 +74,7 @@ const SectionHero = () => {
                 height={200}
               />
             </div>
-            <Link href="/">
+            <Link target='_blank' href="https://wa.me/5521991348429">
               <Image
                 className="hover:scale-105 p-8"
                 alt="whats"
