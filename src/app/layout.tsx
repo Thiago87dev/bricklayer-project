@@ -23,7 +23,7 @@ export default function RootLayout({
       <body className={`${inter.className} relative`}>
         <Navbar />
         {children}
-        <div className="bg-colorGreen inline-block rounded-full text-colorWhite fixed bottom-8 right-8 p-2">
+        <div className="bg-colorGreen inline-block rounded-full text-colorWhite fixed bottom-16 right-8 p-2">
           <Link target="_blank" href="https://wa.me/5521991348429"><SiWhatsapp size={30}  /></Link>
         </div>
         <Footer/>
