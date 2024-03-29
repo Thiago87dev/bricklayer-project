@@ -18,8 +18,8 @@ export default function ContactForm({textLabel, successTextColor}: ContactFormPr
             <p className=" text-center text-2xl font-bold ">Em breve, lhe daremos um retorno.</p>
         </div>
         <div className=" flex items-center gap-2  justify-center" onClick={() => window.location.reload()}>
-            <p className="text-7xl cursor-pointer"><IoReturnDownBack /></p>
-            <p className="text-base cursor-pointer">Voltar</p>
+            <p className={`text-7xl cursor-pointer ${successTextColor}`}><IoReturnDownBack /></p>
+            <p className={`text-base cursor-pointer ${successTextColor}`}>Voltar</p>
         </div>
       </div>
     );
