@@ -28,7 +28,7 @@ const Navbar = () => {
 
   return (
     <div className={`${alegreya.className} fixed w-full z-20`}>
-      <nav className="flex justify-between items-center bg-[#f9d63a]">
+      <nav className="flex justify-between items-center bg-colorGold">
         <div className="flex items-center justify-between w-3/5 mx-auto">
         <Link
           href="/"
@@ -53,7 +53,7 @@ const Navbar = () => {
           
         </div>
       </nav>
-      <div className="md:hidden flex justify-between p-4 items-center bg-[#f9d63a]">
+      <div className="md:hidden flex justify-between p-4 items-center bg-colorGold">
         {!active ? (
           <div className="flex justify-between w-full items-center h-16 ">
             <div>
