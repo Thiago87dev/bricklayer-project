@@ -50,7 +50,7 @@ export default function ContactForm({textLabel, successTextColor}: ContactFormPr
 
       <div className="flex flex-col">
         <label className={`font-semibold ${textLabel}`} htmlFor="message">Mensagem</label>
-        <textarea className="h-24 px-4 border-solid border-2 " placeholder="Digite sua proposta, ou apenas me diga olá :)" id="message" name="message" />
+        <textarea className="h-24 px-4 border-solid border-2 " placeholder="Solicite um orçamento ou tire suas dúvidas." id="message" name="message" />
         <ValidationError
           prefix="Message"
           field="message"

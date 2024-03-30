@@ -4,6 +4,9 @@ import pedreiro from "@/assets/img/pedreiro.png";
 import vinte from "@/assets/img/vinte.png";
 import whats from "@/assets/img/whats.png";
 import mais from "@/assets/img/mais.png";
+import { Edu_NSW_ACT_Foundation } from "next/font/google";
+
+const edu = Edu_NSW_ACT_Foundation({ subsets: ["latin"] });
 
 const SectionHero = () => {
   return (
@@ -14,7 +17,7 @@ const SectionHero = () => {
               <h1 className="text-colorWhite text-6xl xs:text-7xl sm:text-8xl font-bold">
                 D.D.M.N
               </h1>
-              <p className="text-colorWhite text-center text-2xl sm:text-4xl">
+              <p className={`text-colorWhite text-center text-2xl sm:text-4xl ${edu.className}`}>
                 Soluções em Construção e Reformas
               </p>
             </div>
