@@ -55,7 +55,10 @@ const SectionHero = () => {
           <div className="flex flex-col md:flex-row items-center justify-between">
             <div className="flex flex-col items-center relative rounded-xl px-1 py-6 bg-colorDarkgray">
               <p className="text-colorWhite text-2xl font-bold text-center">
-                Precisando reformar
+                Precisando construir
+              </p>
+              <p className="text-colorWhite text-2xl font-bold text-center">
+              ou reformar
               </p>
               <p className="text-colorGold text-4xl xs:text-6xl font-bold text-center">
                 Sua Casa?
