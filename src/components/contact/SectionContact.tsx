@@ -14,7 +14,7 @@ const SectionContact = () => {
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-bold ">Telefone</h2>
-            <p>(21) 99134 - 8429</p>
+            <p>(47) 99692 - 5440</p>
           </div>
           <div className="flex flex-col gap-2">
             <h2 className="text-xl font-bold ">Endereço</h2>
