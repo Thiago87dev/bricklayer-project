@@ -58,7 +58,7 @@ const imgArray = [
     };
   
     return (
-      <div className="flex flex-col py-32 px-4 md:px-0 md:w-3/5 mx-auto ">
+      <div className="flex flex-col pt-32 px-4 md:px-0 md:w-3/5 mx-auto ">
         <div className="flex flex-col gap-8">
             <h1 className="text-center text-5xl font-bold">Alguns de nossos projetos</h1>
             <p className="text-center">Bem-vindo à nossa galeria de projetos de reforma e construção! Aqui, orgulhosamente apresentamos uma seleção dos projetos realizados pela nossa empresa, destacando nossa experiência e compromisso com a excelência em cada empreendimento.</p>
