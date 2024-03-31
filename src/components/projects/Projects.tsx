@@ -63,9 +63,9 @@ const imgArray = [
             <h1 className="text-center text-5xl font-bold">Alguns de nossos projetos</h1>
             <p className="text-center">Bem-vindo à nossa galeria de projetos de reforma e construção! Aqui, orgulhosamente apresentamos uma seleção dos projetos realizados pela nossa empresa, destacando nossa experiência e compromisso com a excelência em cada empreendimento.</p>
         </div>
-        <div className="flex justify-around flex-wrap ">
+        <div className="flex justify-around flex-wrap gap-8">
           {imgArray.map((imagem, index) => (
-            <div className="flex justify-center flex-wrap w-64 py-4 " key={index}>
+            <div className="flex justify-center flex-wrap w-28 md:w-40 py-4 " key={index}>
               <Image
                 src={imagem}
                 alt="imagem do projeto"
