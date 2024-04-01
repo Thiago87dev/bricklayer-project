@@ -1,5 +1,5 @@
 <img src="public/logo.png" alt="car" width="100">
-  
+
 ## Next js 14 + Typescript + Tailwind
 <img src="https://img.shields.io/badge/Next.js-000000.svg?style=for-the-badge&logo=nextdotjs&logoColor=white" alt="next js"/>
 <img src="https://img.shields.io/badge/TypeScript-3178C6.svg?style=for-the-badge&logo=TypeScript&logoColor=white" alt="typescript"/>
@@ -14,6 +14,7 @@ A website for a construction company, which has integration with Google maps, co
 * Next.js 14 App Router and Server side Rendering.
 * API Consumption: Google Maps.
 * Contact Form
+* Popup Images
 * Well-organized file and folder structure.
 * Clean code.
 * Responsive.
