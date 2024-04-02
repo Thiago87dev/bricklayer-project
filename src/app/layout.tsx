@@ -9,6 +9,9 @@ import Footer from "@/components/Footer";
 const rubik = Rubik({subsets: ["latin"] });
 
 export const metadata: Metadata = {
+  icons:{
+    icon: '/icon.ico'
+  },
   title: "D.D.M.N Construções",
   description: "Soluções em Construção e Reformas",
 };
