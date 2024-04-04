@@ -8,7 +8,7 @@ interface MapProps {}
 const Map = () => {
   const { isLoaded } = useJsApiLoader({
     id: "google-map-script",
-    googleMapsApiKey: "AIzaSyBtVckxcTI9nUTSQFhbxR4XpLZoXEMSEEI",
+    googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY ?? "",
   });
 
   const position = {
