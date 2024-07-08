@@ -11,7 +11,7 @@ const Footer = () => {
           <span className="text-blue-700">
             <Link
               target="_blank"
-              href="https://www.instagram.com/thiagopaulista87/"
+              href="https://portifolio-five-neon.vercel.app/"
             >
               Thiago Alves
             </Link>
